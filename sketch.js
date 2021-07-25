@@ -136,7 +136,7 @@ background(bg1)
   if(mousePressedOver(leftArrow)){
 	playerPlane.x = playerPlane.x-5;
   }
-  if(mousePressedOver(shoot1) || mousePressedOver(shoot2)){
+  if(shoot1.isPressed || mousePressedOver(shoot2)){
 	if(frameCount%10===0){
 		bullet = createSprite(playerPlane.x,700);
 		bullet.addImage(bulletImg);
